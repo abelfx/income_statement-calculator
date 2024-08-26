@@ -27,7 +27,7 @@ public class DataBase {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Income", 
-                    "root", "Ab12el34te56sf78@");
+                    "root", "");
 
             java.sql.Statement state = con.createStatement();
             ResultSet set = state.executeQuery("SELECT * FROM income");
